@@ -1,0 +1,15 @@
+<%= simple_form_for(@ficha) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :nome, label: "Nome: " %>
+    <%= f.input :numero_ordem, label: "Número de Ordem: " %>
+    <%= f.input :admissao, label: "Data de Admissão: ", start_year: 1950, end_year: Date.today.year %>
+    <%= f.input :dispensa, label: "Data de Dispensa: ", start_year: 1950, end_year: Date.today.year %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Criar e continuar", class: "btn btn-primary" unless( params[:action] == "edit" || params[:action] == 'update') %>
+    <%= f.button :submit, class: "btn #{'btn-primary' if(params[:action] == 'edit' || params[:action] == 'update')}" %>
+  </div>
+<% end %>

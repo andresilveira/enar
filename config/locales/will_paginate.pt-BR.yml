@@ -1,0 +1,6 @@
+pt-BR:
+  will_paginate:
+    next_label: "Próximo"
+    previous_label: "Anterior"
+    page_gap: "..."
+  

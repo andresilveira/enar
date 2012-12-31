@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: MyString
+  numero_ordem: MyString
+  admissao: 2012-12-21
+  dispensa: 2012-12-21
+
+two:
+  nome: MyString
+  numero_ordem: MyString
+  admissao: 2012-12-21
+  dispensa: 2012-12-21

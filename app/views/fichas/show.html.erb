@@ -1,0 +1,24 @@
+<h2>
+  <%= @ficha.nome %>
+</h2>
+
+<p>
+  <b>Numero ordem:</b>
+  <%= @ficha.numero_ordem %>
+</p>
+
+<p>
+  <b>Admissao:</b>
+  <%= @ficha.admissao %>
+</p>
+
+<p>
+  <b>Dispensa:</b>
+  <%= @ficha.dispensa %>
+</p>
+
+<br />
+<%= link_to 'Editar', edit_ficha_path(@ficha), class: "btn btn-primary"  %>
+<br />
+<br />
+<%= link_to 'Voltar', fichas_path %>
