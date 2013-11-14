@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.15'
 
 gem 'pg'
 
@@ -27,3 +27,5 @@ gem 'simple_form'
 gem 'will_paginate'
 gem 'thin'
 gem 'newrelic_rpm'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'

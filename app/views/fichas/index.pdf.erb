@@ -1,0 +1,20 @@
+<h1 style="float:left">Todas as fichas</h1>
+<h2 style="float:right;color:grey;"><%= Date.today.strftime("%d/%m/%Y") %></h2>
+<div style="clear:both"></div><!-- .clearfix -->
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Numero ordem</th>
+    <th>Admissao</th>
+    <th>Dispensa</th>
+  </tr>
+
+<% @fichas.each do |ficha| %>
+  <tr>
+    <td><%= ficha.nome %></td>
+    <td><%= ficha.numero_ordem %></td>
+    <td><%= ficha.admissao.strftime("%d/%m/%Y") if ficha.admissao %></td>
+    <td><%= ficha.dispensa.strftime("%d/%m/%Y") if ficha.dispensa %></td>
+  </tr>
+<% end %>
+</table>

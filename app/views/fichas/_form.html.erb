@@ -1,15 +1,18 @@
-<%= simple_form_for(@ficha) do |f| %>
-  <%= f.error_notification %>
+<%= simple_form_for(@ficha, html: {class: "form", role: "form"}) do |f| %>
+<%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :nome, label: "Nome: " %>
-    <%= f.input :numero_ordem, label: "Número de Ordem: " %>
-    <%= f.input :admissao, label: "Data de Admissão: ", start_year: 1950, end_year: Date.today.year %>
-    <%= f.input :dispensa, label: "Data de Dispensa: ", start_year: 1950, end_year: Date.today.year %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Criar e continuar", class: "btn btn-primary" unless( params[:action] == "edit" || params[:action] == 'update') %>
-    <%= f.button :submit, class: "btn #{'btn-primary' if(params[:action] == 'edit' || params[:action] == 'update')}" %>
-  </div>
+<div class="form-group row">
+  <%= f.input :nome, label: "Nome: ", input_html: {class: "form-control"}, wrapper_html: {class: "col-xs-12 col-md-4"} %>
+</div><!-- .form-group -->
+<div class="form-group row">
+  <%= f.input :numero_ordem, label: "Número de Ordem: ", input_html: {class: "form-control"}, wrapper_html: {class: "col-xs-12  col-md-4"} %>
+</div><!-- .form-group -->
+<div class="form-group row">
+  <%= f.input :admissao, label: "Data de Admissão: ", start_year: 1950, end_year: Date.today.year, input_html: {class: "form-control date-input"}, wrapper_html: {class: 'col-xs-12'} %>
+</div><!-- .form-group -->
+<div class="form-group row">
+  <%= f.input :dispensa, label: "Data de Dispensa: ", start_year: 1950, end_year: Date.today.year, input_html: {class: "form-control date-input"}, wrapper_html: {class: 'col-xs-12'} %>
+</div><!-- .form-group -->
+<%= f.button :submit, "Criar e continuar", class: "btn btn-primary" unless( params[:action] == "edit" || params[:action] == 'update') %>
+<%= f.button :submit, class: "btn #{'btn-primary' if(params[:action] == 'edit' || params[:action] == 'update')}" %>
 <% end %>

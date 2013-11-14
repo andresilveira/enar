@@ -7,6 +7,7 @@ pt-BR:
       send_instructions: 'Dentro de minutos, você receberá um e-mail com instruções para a confirmação da sua conta.'
       send_paranoid_instructions: 'Se o seu endereço de e-mail estiver cadastrado, você receberá uma mensagem com instruções para confirmação da sua conta.'
     failure:
+      not_found_in_database: 'Usuário não encontrado.'
       already_authenticated: 'Você já está logado.'
       inactive: 'Sua conta ainda não foi ativada.'
       invalid: 'E-mail ou senha inválidos.'

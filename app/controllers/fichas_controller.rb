@@ -9,6 +9,11 @@ class FichasController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @fichas }
+      format.pdf do
+        @fichas = Ficha.order(:nome)
+        render pdf: Ficha.model_name.human(count: 2),
+        layout: 'pdf.html'
+      end
     end
   end
 
