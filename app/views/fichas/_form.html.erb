@@ -8,7 +8,7 @@
   <%= f.input :numero_ordem, label: "Número de Ordem: ", input_html: {class: "form-control"}, wrapper_html: {class: "col-xs-12  col-md-4"} %>
 </div><!-- .form-group -->
 <div class="form-group row">
-  <%= f.input :admissao, label: "Data de Admissão: ", start_year: 1950, end_year: Date.today.year, input_html: {class: "form-control date-input"}, wrapper_html: {class: 'col-xs-12'} %>
+  <%= f.input :admissao, label: "Data de Admissão: ", start_year: 1950, end_year: Date.today.year, input_html: {class: "form-control date-input date-day"}, wrapper_html: {class: 'col-xs-12'} %>
 </div><!-- .form-group -->
 <div class="form-group row">
   <%= f.input :dispensa, label: "Data de Dispensa: ", start_year: 1950, end_year: Date.today.year, input_html: {class: "form-control date-input"}, wrapper_html: {class: 'col-xs-12'} %>

@@ -1,7 +1,0 @@
-<%= form_tag :search_fichas, method: :get, class: "navbar-form navbar-right", role: "search" do |f| %>
-<div class="form-group">
-  <%= label_tag :name, "Nome do funcionário", class: "sr-only" %>
-  <%= text_field_tag :name, nil, class: "form-control", placeholder: "Nome do funcionário" %>
-</div>
-<%= submit_tag "Procurar", class: "btn btn-default" %>
-<% end %>
