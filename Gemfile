@@ -14,10 +14,11 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
+  gem 'quiet_assets'
 end
 
 gem 'jquery-rails'
-
+gem 'active_model_serializers'
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'simple_form'

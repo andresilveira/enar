@@ -4,11 +4,11 @@ class FichasController < ApplicationController
   # GET /fichas
   # GET /fichas.json
   def index
-    @fichas = Ficha.order(:nome).paginate(per_page: 10, page: params[:page])
+    @fichas = Ficha.order(:nome).paginate(per_page: 10, page: params[:page]).all
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @fichas }
+      format.json { render json: @fichas.to_json }
       format.pdf do
         @fichas = Ficha.order(:nome)
         render pdf: Ficha.model_name.human(count: 2),

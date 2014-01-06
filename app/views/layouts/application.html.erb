@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app='enar'>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,9 +17,9 @@
     <div class="container">
       <div class="content">
         <%= render 'layouts/messages' %>
-        <%= yield %>
+        <div ng-view></div>
       </div>
     </div> <!--! end of .container -->
-  </div>
+  </div> <!-- main -->
 </body>
 </html>
