@@ -1,6 +1,10 @@
 Enar
 ====
+[![Code Climate](https://codeclimate.com/github/andresilveira/enar.png)](https://codeclimate.com/github/andresilveira/enar)
 
-A simple admin to record emplyees informations.
+A simple admin to record employees information.
 
-Build using twitter bootstrap.
+Built using twitter bootstrap.
+
+Also some experiments with [AngularJS](http://angularjs.org/) can be found at the angular branch.
+
